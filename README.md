@@ -10,7 +10,7 @@ functions and correlated subqueries — reflecting real-world data analysis prac
 
 📂 Dataset
 
-Column                  -                      Description 
+Column                  -                     Description 
 
 Player Name             -                  Name of the batter 
 
@@ -83,49 +83,29 @@ Insight              -                            Finding
 
 🟢 Basic Analysis
 
-1.Top run scorer among all batters in IPL 2025
+- Top scorers
 
-2.Who has the highest strike rate? (min 15 matches)
+- Strike rate analysis
 
-3.Which batting position scores the most runs?
-
-4.Most consistent player (high average + many matches)
-
-5.Average strike rate of all batters team-wise
-
-6.Which team has the most combined runs?
-
-7.Find batters with more 6s than 4s (min 10 matches)
+- Team batting performance
 
 🟡 Intermediate Analysis
 
-8.Find all batters who scored more than the average runs
+- Above-average performers
 
-9.Find the batter with the second highest run total
+- Team-wise rankings
 
-10.Highest run scorer from each team
-
-11.Find the second highest run scorer in each team
-
-12.Which player converts fifties into centuries best?
+- Conversion rate analysis
 
 🔴 Advanced Analysis
 
-13.Highest strike rate in each team (min 200 balls faced)
+- Window functions
 
-14.Top 5 run scorers in each team (using RANK window function)
+- Positional comparisons
 
-15.Players who hit more sixes than their team average
+- Player classification
 
-16.Players whose average is higher than the average of all batters at the same position
-
-17.Classify players as STAR PLAYER / CONSISTENT / EXPLOSIVE (using CASE)
-
-18.Identify players as Boundary Dependent / Balanced / Accumulator
-
-19.Which player contributes the highest percentage of their team's runs?
-
-20.Find players whose average is higher than their positional average
+- Team contribution analysis
 
 🧠 SQL Concepts Used
 
