@@ -45,7 +45,7 @@ order by SR DESC LIMIT 1;
 			  stunning strike rate of 182, among all batters 
               who played a minimum of 15 matches
               A strike rate of 182 means Naman Dhir scored 
-              almost 2 runs every single ball he faced — 
+              almost 2 runs every single ball he faced  
               making him one of the most destructive finishers 
               in the tournament */
               
@@ -95,7 +95,7 @@ GROUP BY TEAM ;
 /* INSIGHT- Gujarat Titans played the most 
             aggressive brand of cricket in IPL 2025 
             while CSK preferred a calculated and 
-		    steady approach -- both styles reflecting 
+		    steady approach both styles reflecting 
             each team's overall batting philosophy  */
 
  
@@ -119,11 +119,11 @@ LIMIT 1;
  
 /* INSIGHT- Punjab Kings (PBKS) dominated the team run 
             charts in IPL 2025, accumulating a massive 
-            2996 combined runs across all their batters — 
+            2996 combined runs across all their batters 
             proving they possessed the most destructive 
             and deep batting lineup in the tournament
             This finding suggests PBKS had excellent 
-            batting depth in IPL 2025 — from openers 
+            batting depth in IPL 2025  from openers 
 			to finishers, every position contributed 
             to their massive run tally, making them 
             extremely difficult to restrict  */
@@ -139,7 +139,7 @@ ORDER BY 6S DESC ;
 
 -- RESULT- Aniket Verma (SRH) leads with 20 sixes more than his total fours.
 
-/* INSIGHT - Batters with more sixes than fours are rare and represent the league's most
+/* INSIGHT - Batters with more sixes than fours are rare and represent the league most
              explosive hitters. Their scoring pattern indicates a strong preference for maximizing
              runs per shot, making them key contributors in the middle and death overs. */
              
@@ -161,10 +161,10 @@ WHERE RUNS>(SELECT AVG(RUNS )  FROM BATTERS);
 			surpass the tournament average in IPL 2025, 
 			with Sai Sudarshan, Suryakumar Yadav, 
             Virat Kohli and Shubman Gill leading the 
-            above average run scorers list — representing 
+            above average run scorers list representing 
             the true elite of IPL 2025 batting .
             Batters scoring above the tournament average 
-			represent the top performers of IPL 2025 — 
+			represent the top performers of IPL 2025 
             these players not only contributed heavily 
             to their team's success but also raised 
             the overall batting standard of the tournament . */
@@ -190,12 +190,12 @@ ORDER BY RUNS DESC LIMIT 1;
 
 /* INSIGHT - Suryakumar Yadav secured the second position 
              in the run charts of IPL 2025 with an 
-             impressive 717 runs — proving that his 
+             impressive 717 runs  proving that his 
              consistency and aggressive batting style 
              made him the second most  run scorer
              of the tournament . This result was derived 
              using a subquery that first identifies  the maximum 
-             runs and then fetched the next highest total — a 
+             runs and then fetched the next highest total  a 
              technique commonly used in real world 
              data analysis to find rankings without 
              using direct LIMIT clauses.     */
@@ -212,16 +212,16 @@ WHERE RUNS IN (SELECT MAX(RUNS) FROM BATTERS
 				GROUP BY TEAM);
                 
 
--- RESULT- GT   → Sai Sudarshan
--- MI   → Suryakumar Yadav
--- RCB  → Virat Kohli
--- LSG  → Mitchell Marsh
--- PBKS → Shreyas Iyer
--- RR   → Yashasvi Jaiswal
--- DC   → KL Rahul
--- SRH  → Heinrich Klaasen
--- KKR  → Ajinkya Rahane
--- CSK  → Shivam Dube 
+-- RESULT- GT   - Sai Sudarshan
+-- MI   - Suryakumar Yadav
+-- RCB  - Virat Kohli
+-- LSG  - Mitchell Marsh
+-- PBKS - Shreyas Iyer
+-- RR   - Yashasvi Jaiswal
+-- DC   - KL Rahul
+-- SRH  - Heinrich Klaasen
+-- KKR  - Ajinkya Rahane
+-- CSK  - Shivam Dube 
 
 
 /* INSIGHT:  8 out of 10 teams were led by 
@@ -244,16 +244,16 @@ WHERE  SR IN (SELECT MAX(SR) FROM BATTERS
                 GROUP BY TEAM);
                 
 
--- RESULT-  LSG  → Nicholas Pooran    (196.25)
--- SRH  → Abhishek Sharma    (193.39)
--- PBKS → Priyansh Arya      (179.24)
--- RCB  → Phil Salt          (175.98)
--- MI   → Suryakumar Yadav   (167.91)
--- GT   → Jos Buttler        (163.03)
--- RR   → Riyan Parag        (166.52)
--- DC   → KL Rahul           (149.72)
--- KKR  → Ajinkya Rahane     (147.72)
--- CSK  → Ravindra Jadeja    (135.58)    
+-- RESULT-  LSG  - Nicholas Pooran    (196.25)
+-- SRH  - Abhishek Sharma    (193.39)
+-- PBKS - Priyansh Arya      (179.24)
+-- RCB  - Phil Salt          (175.98)
+-- MI   - Suryakumar Yadav   (167.91)
+-- GT   - Jos Buttler        (163.03)
+-- RR   - Riyan Parag        (166.52)
+-- DC   - KL Rahul           (149.72)
+-- KKR  - Ajinkya Rahane     (147.72)
+-- CSK  - Ravindra Jadeja    (135.58)    
 
 /* INSIGHT - Nicholas Pooran (LSG) was the most 
              explosive genuine batter with 196.25 strike 
@@ -273,13 +273,13 @@ ORDER BY CONVERSION_RATE DESC;
 
 /* INSIGHT- Heinrich Klaasen, Vaibhav Suryavanshi and 
             Ishan Kishan shared the best fifty to century 
-            conversion rate of 50% in IPL 2025 — each 
+            conversion rate of 50% in IPL 2025 each 
             scoring 1 century and 1 fifty, meaning every 
             alternate fifty they scored was converted 
             into a match winning century.A conversion rate of 50% means 
              that whenever these three batters reached the fifty mark, 
              they had a 1 in 2 chance of going on to score 
-			a century — reflecting exceptional mental 
+			a century  reflecting exceptional mental 
 			strength, concentration and big match 
 			temperament.    */ 
             
@@ -301,7 +301,7 @@ where rank_in_team<=5 ;
              with Sudarshan, Gill and Buttler all 
 			 crossing 500 runs while PBKS showed 
              best overall depth with all 5 batters 
-             crossing 350 runs -- explaining why PBKS 
+             crossing 350 runs  explaining why PBKS 
              accumulated highest combined team runs. 
              DC showed dangerous one man dependency 
              on KL Rahul who almost doubled the runs 
@@ -340,18 +340,18 @@ ORDER BY AVG DESC
  ) AS RNK FROM BATTERS ) AS W
 WHERE RNK=1;
 
--- RESULT-  Pos 0 → Mitchell Marsh      (avg 48.23)
--- Pos 1 → Sai Sudarshan       (avg 54.21)
--- Pos 2 → Shubman Gill        (avg 50.00)
--- Pos 3 → Virat Kohli         (avg 54.75)
--- Pos 4 → Jos Buttler         (avg 59.78)
--- Pos 5 → Suryakumar Yadav    (avg 65.18)
--- Pos 6 → Tim David           (avg 62.33)
--- Pos 7 → Shashank Singh      (avg 50.00)
--- Pos 7 → Tristan Stubbs      (avg 50.00)
+-- RESULT-  Pos 0 - Mitchell Marsh      (avg 48.23)
+-- Pos 1 - Sai Sudarshan       (avg 54.21)
+-- Pos 2 - Shubman Gill        (avg 50.00)
+-- Pos 3 - Virat Kohli         (avg 54.75)
+-- Pos 4 - Jos Buttler         (avg 59.78)
+-- Pos 5 - Suryakumar Yadav    (avg 65.18)
+-- Pos 6 - Tim David           (avg 62.33)
+-- Pos 7 - Shashank Singh      (avg 50.00)
+-- Pos 7 - Tristan Stubbs      (avg 50.00)
 
 /* INSIGHT- Every batting position has a clear 
-            above average performer -- SKY dominates 
+            above average performer SKY dominates 
             position 5 with remarkable average of 65.18 
             while Virat Kohli and Jos Buttler prove their 
             class at positions 3 and 4 respectively  
@@ -423,22 +423,22 @@ where rnk=1;
 
 
 -- Result:
--- GT   → Sai Sudarshan  (759 runs  | 27.47%)
--- RCB  → Virat Kohli    (657 runs  | 25.88%)
--- MI   → SKY            (717 runs  | 25.68%)
--- LSG  → Mitchell Marsh (627 runs  | 24.18%)
--- DC   → KL Rahul       (539 runs  | 22.69%)
--- RR   → Jaiswal        (559 runs  | 22.58%)
--- KKR  → Ajinkya Rahane (390 runs  | 20.71%)
--- SRH  → H Klaasen      (487 runs  | 20.48%)
--- PBKS → Shreyas Iyer   (604 runs  | 20.16%)
--- CSK  → Shivam Dube    (357 runs  | 15.53%)
+-- GT   - Sai Sudarshan  (759 runs  | 27.47%)
+-- RCB  - Virat Kohli    (657 runs  | 25.88%)
+-- MI   - SKY            (717 runs  | 25.68%)
+-- LSG  - Mitchell Marsh (627 runs  | 24.18%)
+-- DC   - KL Rahul       (539 runs  | 22.69%)
+-- RR   - Jaiswal        (559 runs  | 22.58%)
+-- KKR  - Ajinkya Rahane (390 runs  | 20.71%)
+-- SRH  - H Klaasen      (487 runs  | 20.48%)
+-- PBKS - Shreyas Iyer   (604 runs  | 20.16%)
+-- CSK  - Shivam Dube    (357 runs  | 15.53%)
 
 
 /* INSIGHT-Sai Sudarshan contributed the 
            highest percentage of team runs (27.47%) 
            making GT most dependent on one player 
-           while CSK's Shivam Dube contributed only 
+           while CSK Shivam Dube contributed only 
 		  15.53% proving CSK had the most balanced 
           batting lineup where no single player 
           dominated the run charts. */
@@ -456,23 +456,23 @@ where rnk=1;
  
  
  -- Result:
--- GT   → Shubman Gill           (650 runs)
--- PBKS → Prabhsimran Singh      (549 runs)
--- LSG  → Nicholas Pooran        (524 runs)
--- SRH  → Abhishek Sharma        (439 runs)
--- MI   → Rohit Sharma           (418 runs)
--- RCB  → Phil Salt              (403 runs)
--- RR   → Riyan Parag            (393 runs)
--- CSK  → Ravindra Jadeja        (301 runs)
--- DC   → Abishek Porel          (301 runs)
--- KKR  → Angkrish Raghuvanshi   (300 runs)
+-- GT   - Shubman Gill           (650 runs)
+-- PBKS - Prabhsimran Singh      (549 runs)
+-- LSG  - Nicholas Pooran        (524 runs)
+-- SRH  - Abhishek Sharma        (439 runs)
+-- MI   - Rohit Sharma           (418 runs)
+-- RCB  - Phil Salt              (403 runs)
+-- RR   - Riyan Parag            (393 runs)
+-- CSK  - Ravindra Jadeja        (301 runs)
+-- DC   - Abishek Porel          (301 runs)
+-- KKR  - Angkrish Raghuvanshi   (300 runs)
 
-/* INSIGHT-GT's second highest scorer Shubman 
+/* INSIGHT-GT second highest scorer Shubman 
 		  Gill (650) scored more than the TOP scorer 
-          of CSK, DC and KKR -- proving GT had the 
+          of CSK, DC and KKR proving GT had the 
           most powerful batting lineup in IPL 2025. 
           Remarkably Ravindra Jadeja appearing as 
-          CSK's second highest scorer confirms that 
+          CSK second highest scorer confirms that 
           CSK heavily relied on their allrounders 
           rather than specialist batters. */
  
