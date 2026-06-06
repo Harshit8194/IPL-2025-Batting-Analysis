@@ -150,6 +150,7 @@ talent in IPL 2025
 📸 Query Results
 
 All 20 SQL query outputs have been documented with screenshots for easy verification.
+
 View all results here- query_results
 
 
