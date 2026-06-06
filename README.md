@@ -147,18 +147,24 @@ specialist CSK batters
 8 out of 10 teams were led by Indian batters, reflecting the dominance of Indian
 talent in IPL 2025
 
+📸 Query Results
+
+All 20 SQL query outputs have been documented with screenshots for easy verification.
+View all results here- query_results
+
 
 📁 Repository Structure
 
 IPL-2025-Batters-Analysis/
 
 
-├── README.md              ← Project documentation
+├── README.md              - Project documentation
 
-├── ipl_batters.csv        ← Raw dataset
+├── IPL2025Batters.csv      -   Raw dataset
 
-└── ipl_analysis.sql       ← All 20 SQL queries with insights
+└── IPL_ANALYSIS.sql     - All 20 SQL queries with insights
 
+└── query_results/      - Screenshots of all query outputs
 
 👨‍💻 Author
 
