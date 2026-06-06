@@ -151,7 +151,7 @@ talent in IPL 2025
 
 All 20 SQL query outputs have been documented with screenshots for easy verification.
 
-View all results here - IPL-2025-Batting-Analysis/query_results/
+View all results here - query_results
 
 
 
